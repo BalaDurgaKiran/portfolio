@@ -182,10 +182,10 @@ let info = {
         "Angular Medicare E-Commerce website. This platform is designed to provide a seamless and user-friendly experience for users seeking to purchase a wide range of Medicare products. Built with Angular, a robust and efficient front-end framework, our website ensures a responsive and dynamic interface for users across various devices."
     },
     {
-    /*  name: "Nutricare",
+    /*  name: "",
       pictures: [
         {
-          img: require("./src/assets/portfolio/nc/one.png")
+          img: require("")
         },
       ],
       technologies: ["Node", "Angular", "Express", "MongDB", "Medical"],
@@ -255,33 +255,14 @@ let info = {
         "I have leveraged Unreal Engine to meticulously craft digital twins and design immersive 3D assets for the Metaverse, seamlessly integrating technologies like AR, VR, MR, and NFTs."
     },
    /*{
-      name: "Bunder",
-      title: "Bunder - MVP Proposal",
+      name: "",
+      title: "",
       pictures: [
         {
-          img: require("./src/assets/designs/bunder/Moodboard.png"),
-          title: "Moodboard"
+          img: require(""),
+          title: ""
         },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 1.png"),
-          title: "Mockup 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 2.png"),
-          title: "Mockup 2"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 3.png"),
-          title: "Mockup 3"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 1.png"),
-          title: "Market Research 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 2.png"),
-          title: "Market Research 2"
-        }
+       
       ],
       technologies: ["XD", "Illustrator"],
       category: "Visual Design",
