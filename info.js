@@ -182,20 +182,35 @@ let info = {
         "Angular Medicare E-Commerce website. This platform is designed to provide a seamless and user-friendly experience for users seeking to purchase a wide range of Medicare products. Built with Angular, a robust and efficient front-end framework, our website ensures a responsive and dynamic interface for users across various devices."
     },
     {
-    /*  name: "",
+     name: "Portfolio",
       pictures: [
         {
-          img: require("")
+          img: require("./src/assets/portimg.jpg")
         },
       ],
-      technologies: ["Node", "Angular", "Express", "MongDB", "Medical"],
+      technologies: ["Node", "Vue","JavaScript"],
       category: "Website",
-      github: "",
-      date: "May, 2017 - Aug, 2017",
-      visit: "",
+      github: "https://github.com/BalaDurgaKiran/My_portfolio",
+      date: "Dec, 2023 - Jan, 2024",
+      visit: "https://github.com/BalaDurgaKiran/My_portfolio",
       description:
-        "."*/
-    }
+        "I completed building my own portfolio website to showcase my work. The site was built using HTML, CSS , JavaScript, Vue, netlify,emailjs and node and features a clean, responsive design.The homepage includes a banner with my name, title and call-to-action button. The about page provides an overview of my background and skills. The projects page highlights some of my top projects with images, descriptions and links. Each project has its own page with more details.The site also has a contact page with a form to get in touch. Overall, the portfolio demonstrates my ability to build a multi-page website from scratch using web development fundamentals. It presents my work and skills in a professional way for potential employers or clients viewing my LinkedIn profile."
+    },
+    {
+      name: "Weather App",
+       pictures: [
+         {
+           img: require("./src/assets/cloud.jpg")
+         },
+       ],
+       technologies: ["Node", "Vue","JavaScript","OpenApi"],
+       category: "Website",
+       github: "https://github.com/BalaDurgaKiran/weather",
+       date: "Jan, 2024 - Mar, 2024",
+       visit: "https://github.com/BalaDurgaKiran/weather",
+       description:
+         "I completed building my own portfolio website to showcase my work. The site was built using HTML, CSS , JavaScript, Vue, netlify,emailjs and node and features a clean, responsive design.The homepage includes a banner with my name, title and call-to-action button. The about page provides an overview of my background and skills. The projects page highlights some of my top projects with images, descriptions and links. Each project has its own page with more details.The site also has a contact page with a form to get in touch. Overall, the portfolio demonstrates my ability to build a multi-page website from scratch using web development fundamentals. It presents my work and skills in a professional way for potential employers or clients viewing my LinkedIn profile."
+     }
   ],
  portfolio_design: [
     {
