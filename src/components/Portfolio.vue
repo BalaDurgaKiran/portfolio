@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <div
     class="py-4 p-st"
@@ -106,7 +107,64 @@
             </div>
           </div>
           <br />
+          <div class="text-center py-3" v-if="showBtn !== 'show less'">
+            <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
+          </div>
         </v-tab>
+        <v-tab title="certificate">
+          <div class="row">
+            <div
+              v-for="(certificate, idx) in certificate_info"
+              :key="idx"
+              :class="{ 'mt-4': idx === 0 ? true : true }"
+              class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
+              style="position: relative;"
+            >
+              <vueper-slides
+                :dragging-distance="50"
+                fixed-height="300px"
+                :bullets="false"
+                slide-content-outside="bottom"
+                style="position: aboslute"
+                  @click.prevent="showDesignModalFn(certificate)"
+
+              >
+                <vueper-slide
+                  v-for="(slide, i) in certificate.pictures"
+                  :key="i"
+                  :image="slide.img"
+                />
+              </vueper-slides>
+              <div
+                style="width: 100%; display: flex; justify-content: space-between"
+                class="mt-2"
+              >
+                <div>
+                  <div class="title2" style="font-weight: 500;">{{ certificate.title }}</div>
+                  <span
+                    class="badge mr-2 mb-2"
+                    v-for="tech in certificate.technologies"
+                    :key="tech"
+                    :class="{ 'bg-dark4': nightMode }"
+                    >{{ tech }}</span
+                  >
+                  •
+                  <span class="date ml-1">{{certificate.date}}</span>
+                </div>
+
+                <button
+                  style="height: 31px; margin-top: 5px;"
+                  class="btn-sm btn btn-outline-secondary no-outline"
+                  @click.prevent="showDesignModalFn(certificate)"
+                >
+                  read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <br />
+        </v-tab>
+
       </vue-tabs>
     </div>
     <transition name="modal">
@@ -127,6 +185,16 @@
         :nightMode="nightMode"
       />
     </transition>
+    <transition name="modal">
+      <CertificateModal
+        :showModal="showCertificateModal"
+        @close="closeModal"
+        v-if="showCertificateModal"
+        :portfolio="certificate_modal_info"
+        :nightMode="nightMode"
+      />
+    </transition>
+ 
   </div>
 </template>
 
@@ -134,6 +202,7 @@
 import Card from "./helpers/Card";
 import Modal from "./helpers/Modal";
 import DesignModal from "./helpers/DesignModal";
+import CertificateModal from "./helpers/CertificateModal";
 import Carousel from "./helpers/Carousel";
 import info from "../../info";
 
@@ -163,11 +232,14 @@ export default {
     return {
       all_info: info.portfolio,
       desgin_info: info.portfolio_design,
+      certificate_info: info.portfolio_certificate,
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
+      showCertificateModal: false,
       modal_info: {},
       design_modal_info: {},
+      certificate_modal_info:{},
       number: 3,
       showBtn: "show more",
       shower: 0,

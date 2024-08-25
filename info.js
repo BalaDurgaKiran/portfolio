@@ -13,7 +13,7 @@ let info = {
   links: {
     linkedin: "https://www.linkedin.com/in/durga-kiran-byrraju/",
     github: "https://github.com/BalaDurgaKiran",
-    //angellist: "",
+    medium: "https://medium.com/@durgakiran2024",
     resume:
       "https://flowcv.com/resume/l88h98mr09"
   },
@@ -209,7 +209,22 @@ let info = {
        date: "Jan, 2024 - Mar, 2024",
        visit: "https://github.com/BalaDurgaKiran/weather",
        description:
-         "I completed building my own portfolio website to showcase my work. The site was built using HTML, CSS , JavaScript, Vue, netlify,emailjs and node and features a clean, responsive design.The homepage includes a banner with my name, title and call-to-action button. The about page provides an overview of my background and skills. The projects page highlights some of my top projects with images, descriptions and links. Each project has its own page with more details.The site also has a contact page with a form to get in touch. Overall, the portfolio demonstrates my ability to build a multi-page website from scratch using web development fundamentals. It presents my work and skills in a professional way for potential employers or clients viewing my LinkedIn profile."
+         "The site is built using HTML, CSS, JavaScript, Vue and pulls weather data from various public APIs to display dynamic, real-time content. It includes features like geolocation to auto-detect a user's location, a search bar to allow looking up any city, graphical weather icons and charts.This project strengthened my skills in fetching and displaying external data feeds, working with APIs, data visualization, and responsive web design to optimize for mobile and desktop viewing. I learned how to effectively present weather information in a clean, easy-to-understand interface that brings value to users."
+     },
+     {
+      name: "Google Clone",
+       pictures: [
+         {
+           img: require("./src/assets/chrome.jpg")
+         },
+       ],
+       technologies: ["Node", "Vue","JavaScript","Firebase"],
+       category: "Website",
+       github: "https://github.com/BalaDurgaKiran/google-clone",
+       date: "Jan, 2024 - Mar, 2024",
+       visit: "https://github.com/BalaDurgaKiran/google-clone",
+       description:
+         "Google Search Clone - A responsive web application that replicates the core functionality of the Google search engine. Built using modern web technologies including HTML, CSS,  JavaScript, Vue, and Firebase, this project showcases my skills in front-end development, API integration, and user experience design. Key Features:1.	Clean and minimalistic user interface, closely resembling the Google homepage.2.	Instant search results displayed on the same page, fetched from the Google Search API.3.	Pagination support for browsing through multiple pages of search results.4.	Responsive design ensuring optimal viewing experience across various devices and screen sizes.5.	Error handling and graceful fallback for cases when APIs are unavailable.This project demonstrates my ability to work with third-party APIs, implement modern front-end techniques, and deliver a polished user experience. It showcases my attention to detail, problem-solving skills, and commitment to creating practical and user-friendly applications."    
      }
   ],
  portfolio_design: [
@@ -268,7 +283,28 @@ let info = {
       visit: "",
       description:
         "I have leveraged Unreal Engine to meticulously craft digital twins and design immersive 3D assets for the Metaverse, seamlessly integrating technologies like AR, VR, MR, and NFTs."
-    },
+    }
+  ],
+  portfolio_certificate: [
+     {
+       name: "Frontend Expert",
+       title: "Algo Expert",
+       pictures: [
+         {
+           img: require("./src/assets/algo.jpg"),
+           title: "Frontend Expert"
+         },
+        
+       ],
+       technologies: ["FrontEnd", "Angular", "React", "Vue", "JavaScript"],
+       category: "Web Development",
+       github: "",
+       date: "Feb, 2024",
+       visit: "",
+       description:
+         "Certified Frontend Expert from AlgoExpert, showcasing advanced skills in building scalable and efficient web interfaces. 🚀👨‍💻"
+     },
+
    /*{
       name: "",
       title: "",

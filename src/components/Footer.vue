@@ -25,9 +25,9 @@
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
+              @click="open('medium')"
             >
-              <i class="fab fa-angellist"></i>
+              <i class="fab fa-medium"></i>
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
@@ -51,7 +51,7 @@ export default {
     return {
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
+      medium: info.links.medium,
       resume: info.links.resume,
     };
   },
@@ -64,8 +64,8 @@ export default {
         case "github":
           window.open(this.github, "_blank");
           break;
-        case "angellist":
-          window.open(this.angellist, "_blank");
+        case "medium":
+          window.open(this.medium, "_blank");
           break;
         case "resume":
           window.open(this.resume, "_blank");
